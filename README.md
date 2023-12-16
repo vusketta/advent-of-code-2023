@@ -6,7 +6,7 @@
 
 ### Daily Solution Index
 
-| days.Day  | Title                           | Part 1 | Part 2 | Code                                                                                                                             |                             
+| Day  | Title                           | Part 1 | Part 2 | Code                                                                                                                             |                             
 |------|---------------------------------|:------:|:------:|----------------------------------------------------------------------------------------------------------------------------------|
 | ✔ 01 | Trebuchet?!                     |   ⭐    |   ⭐    | [![Code](https://img.shields.io/badge/Code-grey?style=for-the-badge&logo=Kotlin)](src/main/kotlin/) | 
 | ✔ 02 | Cube Conundrum                  |   ⭐    |   ⭐    | [![Code](https://img.shields.io/badge/Code-grey?style=for-the-badge&logo=Kotlin)](src/main/kotlin/) | 
