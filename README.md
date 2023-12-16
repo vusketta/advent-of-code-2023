@@ -8,10 +8,10 @@
 
 | Day  | Title                           | Part 1 | Part 2 | Code                                                                                                                             |                             
 |------|---------------------------------|:------:|:------:|----------------------------------------------------------------------------------------------------------------------------------|
-| ✔ 01 | Trebuchet?!                     |   ⭐    |   ⭐    | [![Code](https://img.shields.io/badge/Code-grey?style=for-the-badge&logo=Kotlin)](src/main/kotlin/) | 
-| ✔ 02 | Cube Conundrum                  |   ⭐    |   ⭐    | [![Code](https://img.shields.io/badge/Code-grey?style=for-the-badge&logo=Kotlin)](src/main/kotlin/) | 
-| ✔ 03 | Gear Ratios                     |   ⭐    |   ⭐    | [![Code](https://img.shields.io/badge/Code-grey?style=for-the-badge&logo=Kotlin)](src/main/kotlin/) | 
-| ✔ 04 | Scratchcards                    |   ⭐    |   ⭐    | [![Code](https://img.shields.io/badge/Code-grey?style=for-the-badge&logo=Kotlin)](src/main/kotlin/) | 
+| ✔ 01 | Trebuchet?!                     |   ⭐    |   ⭐    | [![Code](https://img.shields.io/badge/Code-grey?style=for-the-badge&logo=Kotlin)](src/main/kotlin/days/Day01.kt) | 
+| ✔ 02 | Cube Conundrum                  |   ⭐    |   ⭐    | [![Code](https://img.shields.io/badge/Code-grey?style=for-the-badge&logo=Kotlin)](src/main/kotlin/days/Day02.kt) | 
+| ✔ 03 | Gear Ratios                     |   ⭐    |   ⭐    | [![Code](https://img.shields.io/badge/Code-grey?style=for-the-badge&logo=Kotlin)](src/main/kotlin/days/Day03.kt) | 
+| ✔ 04 | Scratchcards                    |   ⭐    |   ⭐    | [![Code](https://img.shields.io/badge/Code-grey?style=for-the-badge&logo=Kotlin)](src/main/kotlin/days/Day04.kt) | 
 | x 05 | If You Give A Seed A Fertilizer |   ❌    |   ❌    | | 
 | x 06 | Wait For It                     |   ❌    |   ❌    | | 
 | x 07 | Camel Cards                     |   ❌    |   ❌    | |                                                                                                   
