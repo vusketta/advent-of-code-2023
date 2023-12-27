@@ -1,12 +1,17 @@
 package days
 
-class Day02 : Day(2, "Cube Conundrum") {
+class Day02 : Day<Int>(2, "Cube Conundrum") {
     override fun partOne(input: List<String>): Int = getGames(input).filter { (_, triple) ->
         triple.first.second <= 12 && triple.second.second <= 13 && triple.third.second <= 14
     }.sumOf { it.first }
+
+    override val partOneTestExamples: Map<List<String>, Int> = mapOf(test1List to 8)
+
     override fun partTwo(input: List<String>): Int = getGames(input).sumOf { (_, s) ->
         s.first.second * s.second.second * s.third.second
     }
+
+    override val partTwoTestExamples: Map<List<String>, Int> = mapOf(test1List to 2286)
 
     private fun getGames(input: List<String>): List<Pair<Int, Triple<Pair<String, Int>, Pair<String, Int>, Pair<String, Int>>>> {
         val regex = Regex("\\d+ (blue|green|red)")
@@ -25,7 +30,4 @@ class Day02 : Day(2, "Cube Conundrum") {
         }
         return games
     }
-
-    override val partOneTestExamples: Map<List<String>, Int> = mapOf(test1List to 8)
-    override val partTwoTestExamples: Map<List<String>, Int> = mapOf(test1List to 2286)
 }

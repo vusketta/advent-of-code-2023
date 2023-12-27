@@ -2,9 +2,14 @@ package days
 
 import kotlin.math.pow
 
-class Day04 : Day(4, "Scratchcards") {
+class Day04 : Day<Int>(4, "Scratchcards") {
     override fun partOne(input: List<String>): Int = input.sumOf { getLinePoints(it) }
+
+    override val partOneTestExamples: Map<List<String>, Int> = mapOf(test1List to 13)
+
     override fun partTwo(input: List<String>): Int = getScratchCardsTotal(input)
+
+    override val partTwoTestExamples: Map<List<String>, Int> = mapOf(test1List to 30)
 
     private fun parseCard(line: String): Set<String> {
         val (winning, scratch) = line.replace(Regex("\\s+"), " ")
@@ -13,7 +18,9 @@ class Day04 : Day(4, "Scratchcards") {
         return winning.split(" ").filter { it.isNotEmpty() }
             .intersect(scratch.split(" ").filter { it.isNotEmpty() }.toSet())
     }
+
     private fun getLinePoints(line: String): Int = 2.0.pow(parseCard(line).size.toDouble() - 1).toInt()
+
     private fun getScratchCardsTotal(input: List<String>): Int {
         val cards = List(input.size) { 1 }.toMutableList()
         val matches = input.map { parseCard(it) }
@@ -24,7 +31,4 @@ class Day04 : Day(4, "Scratchcards") {
         }
         return cards.sum()
     }
-
-    override val partOneTestExamples: Map<List<String>, Int> = mapOf(test1List to 13)
-    override val partTwoTestExamples: Map<List<String>, Int> = mapOf(test1List to 30)
 }

@@ -1,9 +1,9 @@
 import org.junit.jupiter.api.Assertions
 import utils.Runner
 
-fun parseTestCase(testCase: Map.Entry<List<String>, Int>) = testCase.key to testCase.value
+fun parseTestCase(testCase: Map.Entry<List<String>, Any>) = testCase.key to testCase.value
 
-fun parseTestCases(testCases: Map<List<String>, Int>) = testCases.entries.map { parseTestCase(it) }.unzip()
+fun parseTestCases(testCases: Map<List<String>, Any>) = testCases.entries.map { parseTestCase(it) }.unzip()
 
 fun testDay(number: Int) {
     val day = Runner.getDay(number)
@@ -15,7 +15,7 @@ fun testDay(number: Int) {
     checkTestCase(input2.map { day.partTwo(it) }, output2)
 }
 
-private fun checkTestCase(actual: List<Int>, expected: List<Int>) {
+private fun checkTestCase(actual: List<Any>, expected: List<Any>) {
     actual.indices.forEach { i ->
         Assertions.assertEquals(expected[i], actual[i])
     }
